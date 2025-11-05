@@ -1,0 +1,21 @@
+{
+  "name": "web_service_contact_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francis-2008-happy/web_service_contact_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/francis-2008-happy/web_service_contact_project/issues"
+  },
+  "homepage": "https://github.com/francis-2008-happy/web_service_contact_project#readme"
+}

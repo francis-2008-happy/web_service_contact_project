@@ -1,0 +1,43 @@
+@baseUrl = http://localhost:3000
+# Replace `REPLACE_CONTACT_ID` with a real contact id returned from the POST response
+@id = REPLACE_CONTACT_ID
+
+### Health check
+GET {{baseUrl}}/
+Accept: application/json
+
+### Get all contacts
+GET {{baseUrl}}/contacts
+Accept: application/json
+
+
+### Create a contact
+POST {{baseUrl}}/contacts
+Content-Type: application/json
+
+{
+    "email": "1245677@gmail.com",
+    "username": "me and you ",
+    "name": "black young",
+    "ipaddress": "94.129.163.53"
+}
+
+### Get contact by id (replace {{id}} with actual id from POST response)
+GET {{baseUrl}}/contacts/690bade5445563be8c731013
+Accept: application/json
+
+### Update contact by id
+PUT {{baseUrl}}/contacts/691f219ddccab878e3da4458
+Content-Type: application/json
+
+{
+    "email": "youngjohn@yahoo.com",
+    "username": "bucci john",
+    "name": "johnjames",
+    "ipaddress": "94.121.163.53"
+}
+
+### Delete contact by id
+DELETE {{baseUrl}}/contacts/691f219ddccab878e3da4458
+Accept: application/json
+
